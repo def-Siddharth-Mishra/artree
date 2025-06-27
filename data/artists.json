@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "Aria Sounds",
+    "category": "Singer",
+    "priceRange": "$500 - $1000",
+    "location": "New York, USA",
+    "bio": "Versatile vocalist specializing in pop, R&B, and jazz. Available for corporate events, weddings, and private parties.",
+    "languages": ["English", "Spanish"],
+    "profileImageUrl": "https://placehold.co/400x400/FF0000/FFFFFF?text=Aria"
+  },
+  {
+    "id": "2",
+    "name": "Rhythm Revolution",
+    "category": "Dancer",
+    "priceRange": "$300 - $700",
+    "location": "Los Angeles, USA",
+    "bio": "Dynamic dance troupe performing contemporary, hip-hop, and Bollywood fusion. Perfect for stage shows and cultural events.",
+    "languages": ["English"],
+    "profileImageUrl": "https://placehold.co/400x400/00FF00/000000?text=Rhythm"
+  },
+  {
+    "id": "3",
+    "name": "DJ Beatmaster",
+    "category": "DJ",
+    "priceRange": "$800 - $1500",
+    "location": "London, UK",
+    "bio": "Experienced DJ known for high-energy sets across various genres including EDM, house, and disco. Lights and sound equipment included.",
+    "languages": ["English", "French"],
+    "profileImageUrl": "https://placehold.co/400x400/0000FF/FFFFFF?text=DJ"
+  },
+  {
+    "id": "4",
+    "name": "Eloquent Speaker",
+    "category": "Speaker",
+    "priceRange": "$1000 - $2500",
+    "location": "Sydney, Australia",
+    "bio": "Motivational speaker focusing on leadership, personal development, and innovation. Engaging and inspiring presentations for all audiences.",
+    "languages": ["English"],
+    "profileImageUrl": "https://placehold.co/400x400/FFFF00/000000?text=Eloquent"
+  },
+  {
+    "id": "5",
+    "name": "Melody Maestro",
+    "category": "Singer",
+    "priceRange": "$400 - $900",
+    "location": "Berlin, Germany",
+    "bio": "Soulful singer-songwriter performing original music and popular covers. Available for intimate gatherings and acoustic sets.",
+    "languages": ["English", "German"],
+    "profileImageUrl": "https://placehold.co/400x400/FF5733/FFFFFF?text=Melody"
+  },
+  {
+    "id": "6",
+    "name": "Graceful Steps",
+    "category": "Dancer",
+    "priceRange": "$250 - $600",
+    "location": "Paris, France",
+    "bio": "Classical ballet and contemporary dancer. Available for performances, workshops, and music video appearances.",
+    "languages": ["English", "French"],
+    "profileImageUrl": "https://placehold.co/400x400/33FF57/000000?text=Graceful"
+  },
+  {
+    "id": "7",
+    "name": "Turntable Tamer",
+    "category": "DJ",
+    "priceRange": "$700 - $1200",
+    "location": "Tokyo, Japan",
+    "bio": "High-energy DJ specializing in electronic music and J-Pop. Guarantees a memorable party experience.",
+    "languages": ["English", "Japanese"],
+    "profileImageUrl": "https://placehold.co/400x400/5733FF/FFFFFF?text=Turntable"
+  },
+  {
+    "id": "8",
+    "name": "Visionary Voice",
+    "category": "Speaker",
+    "priceRange": "$900 - $2000",
+    "location": "Toronto, Canada",
+    "bio": "Dynamic speaker on innovation and future trends. Inspiring talks for conferences and corporate events.",
+    "languages": ["English"],
+    "profileImageUrl": "https://placehold.co/400x400/33A0FF/000000?text=Visionary"
+  }
+]
