@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Button } from '@/components/ui/button'; // Import Button component from ShadCN UI
+import { Button } from '@/components/ui/button';
 
 // Define the interface for Artist data
 interface Artist {
