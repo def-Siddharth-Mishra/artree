@@ -1,3 +1,5 @@
+
+"use client";
 import { Header } from '@/components/Header';
 import { Table, TableColumn } from '@/components/Table';
 import { useShortlist } from '@/context/ShortlistContext';

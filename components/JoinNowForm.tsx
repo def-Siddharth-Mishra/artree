@@ -11,6 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Label } from "@/components/ui/label";
 // import { toast } from "sonner";
 
+
 const categories = ["Singer", "Dancer", "DJ", "Speaker"];
 const languages = ["English", "Spanish", "French", "German", "Hindi", "Mandarin"];
 const feeRanges = ["$100 - $500", "$500 - $1000", "$1000 - $2000", "$2000+"];
