@@ -1,4 +1,3 @@
-// components/MultiSelect.tsx
 import React, { useState } from 'react';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
