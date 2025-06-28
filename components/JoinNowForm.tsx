@@ -49,7 +49,7 @@ export function JoinNowForm() {
     languages: (string | undefined)[];
     location: string;
     feeRange: string;
-    profileImage?: any;
+    profileImage?: unknown;
   }) => {
     setSubmitting(true);
     setTimeout(() => {
