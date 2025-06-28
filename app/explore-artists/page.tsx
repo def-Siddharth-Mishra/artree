@@ -1,6 +1,7 @@
 
-import dynamic from 'next/dynamic';
-const ExploreArtistsClient = dynamic(() => import('./ExploreArtistsClient'), { ssr: false });
+
+"use client";
+import ExploreArtistsClient from "./ExploreArtistsClient";
 
 export default function ExploreArtistsPage() {
   return <ExploreArtistsClient />;
