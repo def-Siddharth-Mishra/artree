@@ -1,5 +1,7 @@
+"use client";
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import { useShortlist } from '@/context/ShortlistContext';
 
 // Define the interface for Artist data
 interface Artist {
@@ -20,6 +22,19 @@ interface Artist {
  * @returns {JSX.Element} The ArtistCard component.
  */
 export function ArtistCard({ artist }: { artist: Artist }) {
+  const { addArtist, isHydrated } = useShortlist();
+  if (!isHydrated) {
+    return (
+      <div className="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col items-center text-center animate-pulse min-h-[320px]">
+        <div className="w-32 h-32 rounded-full bg-gray-200 mb-4" />
+        <div className="h-6 w-24 bg-gray-200 rounded mb-2" />
+        <div className="h-4 w-32 bg-gray-100 rounded mb-1" />
+        <div className="h-4 w-28 bg-gray-100 rounded mb-1" />
+        <div className="h-4 w-24 bg-gray-100 rounded mb-4" />
+        <div className="h-10 w-full bg-gray-200 rounded" />
+      </div>
+    );
+  }
   return (
     <div className="bg-white border border-gray-200 rounded-lg shadow-md p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 duration-300">
       {/* Artist Profile Image */}
@@ -30,8 +45,8 @@ export function ArtistCard({ artist }: { artist: Artist }) {
           width={128}
           height={128}
           className="rounded-full object-cover border-4 border-blue-500 shadow-lg"
-          // Fallback for image loading errors
-          onError={(e) => { e.currentTarget.src = 'https://placehold.co/128x128/ccc/000?text=No+Image'; }}
+          unoptimized
+          onError={undefined}
         />
       </div>
 
@@ -50,9 +65,12 @@ export function ArtistCard({ artist }: { artist: Artist }) {
       </p>
 
       {/* Ask for Quote Button */}
-      {/* Using asChild to allow the Button component to render a custom element (here, an anchor tag) */}
-      <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-md py-2 px-4 shadow-md transition-colors duration-200">
-        Ask for Quote
+      <Button
+        className="w-full bg-blue-600 hover:bg-blue-700 text-white rounded-md py-2 px-4 shadow-md transition-colors duration-200"
+        onClick={() => addArtist(artist)}
+        aria-label={`Add ${artist.name} to shortlist`}
+      >
+        Add to Shortlist
       </Button>
     </div>
   );

@@ -9,27 +9,24 @@ import { Button } from '@/components/ui/button';
  */
 export function Header() {
   return (
-    <header className="bg-white shadow-sm py-4 px-6 md:px-12 rounded-b-lg">
+    <header className="bg-white dark:bg-gray-900 shadow-sm py-4 px-6 md:px-12 rounded-b-lg">
       <nav className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Logo/Brand Name */}
-        <Link href="/" className="text-2xl font-bold text-gray-800 mb-4 md:mb-0">
+        <Link href="/" className="text-2xl font-bold text-gray-800 dark:text-white mb-4 md:mb-0">
           Artree
         </Link>
 
         {/* Navigation Links */}
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 items-center">
-          <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+          <Link href="/" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
             Home
           </Link>
-          <Link href="/artists" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
+          <Link href="/artists" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors duration-200">
             Artists
-          </Link>
-          <Link href="/onboard" className="text-gray-600 hover:text-gray-900 transition-colors duration-200">
-            Onboard as Artist
           </Link>
           {/* Call to Action Button */}
           <Button asChild className="bg-blue-600 hover:bg-blue-700 text-white rounded-md px-6 py-2 transition-colors duration-200 shadow-md">
-            <Link href="/onboard">Join Now</Link>
+            <Link href="/onboard-artist">Join Now</Link>
           </Button>
         </div>
       </nav>

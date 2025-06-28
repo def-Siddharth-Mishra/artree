@@ -18,10 +18,10 @@ export default function HomePage() {
 
       {/* Category Cards */}
       <section className="container mx-auto py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        <CategoryCard title="Singer" icon={<Music />} href="/artists?category=Singer" />
-        <CategoryCard title="Dancer" icon={<PersonStanding />} href="/artists?category=Dancer" />
-        <CategoryCard title="DJ" icon={<Disc3 />} href="/artists?category=DJ" />
-        <CategoryCard title="Speaker" icon={<Mic2 />} href="/artists?category=Speaker" />
+        <CategoryCard title="Singer" icon={<Music />} href="/explore-artists?category=Singer" />
+        <CategoryCard title="Dancer" icon={<PersonStanding />} href="/explore-artists?category=Dancer" />
+        <CategoryCard title="DJ" icon={<Disc3 />} href="/explore-artists?category=DJ" />
+        <CategoryCard title="Speaker" icon={<Mic2 />} href="/explore-artists?category=Speaker" />
       </section>
     </>
   );
