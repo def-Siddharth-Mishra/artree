@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Artree —  Frontend Demo
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-13+-black?logo=nextdotjs)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.x-38b2ac?logo=tailwindcss)](https://tailwindcss.com/)
+[![ShadCN UI](https://img.shields.io/badge/ShadCN-UI-blueviolet)](https://ui.shadcn.com)
+[![Vercel](https://img.shields.io/badge/Hosted_on-Vercel-black?logo=vercel)](https://vercel.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
 
-First, run the development server:
+A fully responsive, polished frontend for a fictional **Performing Artist Booking Platform** , built as part of a frontend developer test assignment. Demonstrates clean code structure, dynamic forms, filterable artist listings, and production-ready UX using **Next.js 13+**, **React**, **Tailwind CSS**, and **ShadCN UI**.
+
+---
+
+## 🚀 Live Demo
+
+🔗 [artree.vercel.app](https://artree.vercel.app) – accessible worldwide via Vercel deployment.
+
+🎥 **Demo Preview**  
+![Artistly Demo Screenshot](public/home_page.png)
+![Artistly Demo Screenshot](public/artist_page.png)
+![Artistly Demo Screenshot](public/category_page.png)
+![Artistly Demo Screenshot](public/join_onboard.png)
+---
+
+## 🧑‍🎤 Features
+
+- **Next.js 13+ App Router** for modern routing and layout
+- **Tailwind CSS** + **ShadCN UI** for clean and responsive design
+- **Artist Listing** with category, location, and price-range filters
+- **Multi-step Onboarding Form** with validation (React Hook Form + Yup)
+- **Reusable Components**: artist card, filter panel, form input, navigation
+- Fully **responsive layout** – desktop grid / mobile list
+- Mocked backend using JSON for quick prototyping
+
+---
+
+
+---
+
+## 🛠️ Setup & Run Locally
 
 ```bash
+git clone https://github.com/your-username/artree.git
+cd artree
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
