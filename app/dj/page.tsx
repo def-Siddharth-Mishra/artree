@@ -4,7 +4,7 @@ import artists from '@/data/artists.json';
 import Head from 'next/head';
 
 export default function DJPage() {
-  const djArtists = artists.filter((artist: any) => artist.category === 'DJ');
+  const djArtists = artists.filter((artist) => artist.category === 'DJ');
   return (
     <>
       <Head>
@@ -15,7 +15,7 @@ export default function DJPage() {
       <main className="container mx-auto py-12 px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center">Book Top DJs in Your City</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {djArtists.map((artist: any) => (
+          {djArtists.map((artist) => (
             <ArtistCard key={artist.id} artist={artist} />
           ))}
         </div>

@@ -40,6 +40,7 @@ export function JoinNowForm() {
     },
   });
 
+  // Use the inferred type from useForm for the onSubmit handler
   const onSubmit = (data: any) => {
     setSubmitting(true);
     setTimeout(() => {

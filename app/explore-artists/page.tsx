@@ -27,7 +27,7 @@ export default function ExploreArtistsPage() {
     setSelectedPrice('All');
   };
 
-  const filteredArtists = artists.filter((artist: any) => {
+  const filteredArtists = artists.filter((artist) => {
     const matchCategory = selectedCategory === 'All' || artist.category === selectedCategory;
     const matchLocation = selectedLocation === 'All' || artist.location === selectedLocation;
     const matchPrice = selectedPrice === 'All' || artist.priceRange === selectedPrice;
@@ -53,7 +53,7 @@ export default function ExploreArtistsPage() {
           onClearFilters={handleClearFilters}
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-8">
-          {filteredArtists.map((artist: any) => (
+          {filteredArtists.map((artist) => (
             <ArtistCard key={artist.id} artist={artist} />
           ))}
         </div>
