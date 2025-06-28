@@ -41,7 +41,16 @@ export function JoinNowForm() {
   });
 
   // Use the inferred type from useForm for the onSubmit handler
-  const onSubmit = (data: any) => {
+  // Use the type from useForm for the onSubmit handler to avoid type mismatch
+  const onSubmit = (data: {
+    name: string;
+    bio: string;
+    category: (string | undefined)[];
+    languages: (string | undefined)[];
+    location: string;
+    feeRange: string;
+    profileImage?: any;
+  }) => {
     setSubmitting(true);
     setTimeout(() => {
       setSubmitting(false);
